@@ -4,7 +4,6 @@
 */
 :root {
   --color-text: rgba(255, 0, 112, 1);
-  --head_button_text: 70px;
   --color_text_title: rgba(219, 0, 255, 1);
   --bg_color_title: rgba(255, 0, 112, 1);
   --bg_color_text_title: rgba(0, 0, 40, 1);
@@ -13,8 +12,11 @@
   --main_description_color_text: rgba(241, 178, 206, 1);
   --footer_color_text: rgba(219, 0, 255, 1);
   --bg_color_main: rgba(0, 0, 40, 1);
+  --bord_color_but: 1px solid rgba(255, 0, 112, 1);
+  --add_element_color: rgba(255, 0, 112, 1);
+  --button_hover_border: 1px solid rgba(255, 0, 112, 0.4);
 }
 .page {
-  background-image: url("/images/cover-image-dark.png");
+  background-image: url("../images/cover-image-dark.png");
   background-attachment: fixed;
 }

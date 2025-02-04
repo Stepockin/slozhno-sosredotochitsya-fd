@@ -1,6 +1,5 @@
 .theme_light {
   --color-text: rgba(53, 52, 48, 1);
-  --head_button_text: 70px;
   --color_text_title: rgba(255, 194, 230, 1);
   --bg_color_title: rgba(255, 141, 203, 1);
   --bg_color_text_title: rgba(53, 52, 48, 1);
@@ -9,13 +8,31 @@
   --main_description_color_text: rgba(53, 52, 48, 1);
   --bg_color_main: rgba(255, 241, 247, 1);
   --footer_color_text: rgba(255, 194, 230, 1);
+  --bord_color_but: 1px solid rgba(53, 52, 48, 1);
+  --add_element_color: rgba(53, 52, 48, 1);
+  --button_hover_border: 1px solid rgba(50, 49, 45, 0.4);
 }
-
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: rgba(53, 52, 48, 1);
+    --color_text_title: rgba(255, 194, 230, 1);
+    --bg_color_title: rgba(255, 141, 203, 1);
+    --bg_color_text_title: rgba(53, 52, 48, 1);
+    --main_question_color_text: rgba(53, 52, 48, 1);
+    --main_bg_color: rgba(255, 141, 203, 1);
+    --main_description_color_text: rgba(53, 52, 48, 1);
+    --bg_color_main: rgba(255, 241, 247, 1);
+    --footer_color_text: rgba(255, 194, 230, 1);
+    --bord_color_but: 1px solid rgba(53, 52, 48, 1);
+    --add_element_color: rgba(53, 52, 48, 1);
+    --button_hover_border: 1px solid rgba(50, 49, 45, 0.4);
+  }
+}
 /* Остальные стили */
 .page.theme_light {
   display: grid;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("/images/cover-image-light.png");
+  background-image: url("../images/cover-image-light.png");
 }
