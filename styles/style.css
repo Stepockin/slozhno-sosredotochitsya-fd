@@ -7,8 +7,7 @@
   margin: 0 auto;
   position: relative;
 }
-.header.decorated-zone {
-}
+
 .header__theme-menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -34,8 +33,8 @@
 .header__theme-menu-button {
   display: grid;
   background-color: transparent;
-  border: none;
-  color: var(--color-text);
+  border:1px transparent;
+  color: var(--color-text_button);
   padding-left: 13px;
   padding-right: 13px;
   cursor: pointer;
@@ -49,11 +48,6 @@
   text-decoration-skip-ink: none;
 }
 .header__theme-menu-button:hover {
-  width: 70px;
-  height: 26px;
-  top: 116px;
-  left: 402px;
-  gap: 10px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
   border: var(--button_hover_border);
@@ -61,15 +55,15 @@
 .header__theme-menu-button:focus {
   border: none; /* Убираем стандартную границу */
   border-bottom: 2px solid white; /* Нижняя "граница как outline" */
+  outline: none;
+}
+.header__theme-menu-button:focus-visible{
+  border: none; /* Убираем стандартную границу */
+  border-bottom: 2px solid white; /* Нижняя "граница как outline" */
+  outline: none;
 }
 
 .header__theme-menu-button_active {
-  width: 70px;
-  height: 26px;
-  top: 147px;
-  left: 295px;
-  padding: 0px 13px 0px 13px;
-  gap: 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
   border: var(--bord_color_but);
@@ -166,17 +160,7 @@
   padding: 0;
 }
 .main_description:last-child {
-  font-family: IBM Plex Mono, "Times New Roman", Times, serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: var(--main_description_color_text);
   margin-bottom: 0px;
-  margin-top: 10px;
-  padding: 0;
 }
 .main_title.sub {
   margin-top: 20px;
@@ -262,7 +246,7 @@
 }
 .footer_text {
   font-family: IBM Plex Mono, "Times New Roman", Times, serif;
-  font-size: 157px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 129.53px;
   text-align: left;
@@ -272,7 +256,7 @@
   margin: 0;
   text-shadow: 4px 4px 0px rgba(255, 0, 112, 1);
 }
-.box_right {
+.corner_start {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -284,7 +268,7 @@
   opacity: 1;
   border-width: 1px 1px 0px 0px;
 }
-.box_down {
+.corner_end {
   width: 25px;
   height: 25px;
   top: 723px;
@@ -430,7 +414,7 @@
   }
   .footer_text {
     font-family: IBM Plex Mono, "Times New Roman", Times, serif;
-    font-size: 120px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-weight: 700;
     line-height: 99px;
     text-align: left;
@@ -523,8 +507,6 @@
     width: 355px;
     height: 355px;
   }
-  .footer {
-  }
   .block_with_footer_text {
     width: 375px;
     margin-top: 40px;
@@ -532,7 +514,7 @@
   }
   .footer_text {
     font-family: IBM Plex Mono, "Times New Roman", Times, serif;
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-weight: 700;
     line-height: 95.7px;
     text-align: left;

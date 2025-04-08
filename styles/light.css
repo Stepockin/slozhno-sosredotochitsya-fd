@@ -1,5 +1,5 @@
 .theme_light {
-  --color-text: rgba(53, 52, 48, 1);
+  --color-text_button: rgba(53, 52, 48, 1);
   --color_text_title: rgba(255, 194, 230, 1);
   --bg_color_title: rgba(255, 141, 203, 1);
   --bg_color_text_title: rgba(53, 52, 48, 1);
